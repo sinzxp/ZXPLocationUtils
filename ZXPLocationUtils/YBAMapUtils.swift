@@ -8,7 +8,7 @@
 
 import UIKit
 
-class YBAMapUtils: NSObject, MAMapViewDelegate, AMapLocationManagerDelegate {
+public class YBAMapUtils: NSObject, MAMapViewDelegate, AMapLocationManagerDelegate {
 
     
     static let sharedInstance = YBAMapUtils.init()
@@ -22,7 +22,7 @@ class YBAMapUtils: NSObject, MAMapViewDelegate, AMapLocationManagerDelegate {
     var completionBlock: AMapLocatingCompletionBlock!
     lazy var locationManager = AMapLocationManager()
     
-    func setApiKey() {
+    public func setApiKey() {
         AMapServices.shared().apiKey = "6d523b515fd3392cc8d32375b8c83dcc"
         
         initCompleteBlock()
@@ -33,7 +33,7 @@ class YBAMapUtils: NSObject, MAMapViewDelegate, AMapLocationManagerDelegate {
         
     }
     
-    func configLocationManager() {
+    public func configLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         locationManager.pausesLocationUpdatesAutomatically = false
@@ -42,12 +42,12 @@ class YBAMapUtils: NSObject, MAMapViewDelegate, AMapLocationManagerDelegate {
         locationManager.reGeocodeTimeout = defaultReGeocodeTimeout
     }
     ///获取地理位置
-    func locAction() {
+    public func locAction() {
         locationManager.requestLocation(withReGeocode: true, completionBlock: completionBlock)
     }
     
 
-    func initCompleteBlock() {
+    public func initCompleteBlock() {
         
         completionBlock = {(location, regeocode, error) in
             if let error = error {
@@ -69,7 +69,7 @@ class YBAMapUtils: NSObject, MAMapViewDelegate, AMapLocationManagerDelegate {
         }
     }
     ///获取地图
-    func getMapView(_ view:UIView) {
+    public func getMapView(_ view:UIView) {
         ///地图需要v4.5.0及以上版本才必须要打开此选项（v4.5.0以下版本，需要手动配置info.plist）
         ///初始化地图
         ///把地图添加至view
