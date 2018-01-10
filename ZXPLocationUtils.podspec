@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "ZXPLocationUtils/AMap2.4.0/*.*"
+  s.resource  = "ZXPLocationUtils/*.*"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -123,6 +123,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
+
   s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit' ,'CoreLocation','AMapFoundationKit','AMapLocationKit','MAMapKit'
 
   # s.library   = "iconv"
