@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZXPLocationUtils/*.*" ,"ZXPLocationUtils/AMap2.4.0/*.*"
+  s.source_files  = "ZXPLocationUtils/*.*" ,"AMap2.4.0/*.*"
 
   #s.source_files  = "Classes", "CJWUtilsPro/QPLib/**/*.swift", "CJWUtilsPro/Utils/*.swift", "CJWUtilsPro/QPLib/Lib/**/*.*","CJWUtilsPro/QPLib/UI/**/*.*","CJWUtilsPro/QPLib/Utils/**/*.*","CJWUtilsPro/QPLib/**/*.*"
 
