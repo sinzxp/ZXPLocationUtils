@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         pr.isUserInteractionEnabled = true
         pr.addGestureRecognizer(tap)
         
+        
 //        YBAMapUtils.sharedInstance.setApiKey()
 //        YBAMapUtils.sharedInstance.getMapView(view)
         
