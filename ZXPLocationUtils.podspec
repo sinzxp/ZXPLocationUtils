@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZXPLocationUtils/*.*" ,"AMap2.4.0/*.*"
+  s.source_files  = "ZXPLocationUtils/*.*" ,"ZXPLocationUtils/abc/*.*"
 
   #s.source_files  = "Classes", "CJWUtilsPro/QPLib/**/*.swift", "CJWUtilsPro/Utils/*.swift", "CJWUtilsPro/QPLib/Lib/**/*.*","CJWUtilsPro/QPLib/UI/**/*.*","CJWUtilsPro/QPLib/Utils/**/*.*","CJWUtilsPro/QPLib/**/*.*"
 
@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
+  s.resource  = "ZXPLocationUtils/AMap2.4.0/*.*"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
