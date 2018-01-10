@@ -139,7 +139,7 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "AMapLocation-NO-IDFA"
-  s.dependency "AMap3DMap-NO-IDFA"
+  #s.dependency "AMap3DMap-NO-IDFA"
 
 
 end
