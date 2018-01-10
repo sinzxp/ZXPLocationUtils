@@ -93,8 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ZXPLocationUtils/*.*" ,"ZXPLocationUtils/abc/*.*","ZXPLocationUtils/abc/AMapFoundationKit.framework/*.*"
-
+  s.source_files  = "ZXPLocationUtils/*.*"
   #s.source_files  = "Classes", "CJWUtilsPro/QPLib/**/*.swift", "CJWUtilsPro/Utils/*.swift", "CJWUtilsPro/QPLib/Lib/**/*.*","CJWUtilsPro/QPLib/UI/**/*.*","CJWUtilsPro/QPLib/Utils/**/*.*","CJWUtilsPro/QPLib/**/*.*"
 
   #s.exclude_files = "Classes/Exclude"
@@ -110,7 +109,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "ZXPLocationUtils/*.*"
+  # s.resource  = "ZXPLocationUtils/*.*"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -139,8 +138,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "AFNetworking"
-
+  s.dependency "AMapLocation-NO-IDFA"
+  s.dependency "AMap3DMap-NO-IDFA"
 
 
 end
