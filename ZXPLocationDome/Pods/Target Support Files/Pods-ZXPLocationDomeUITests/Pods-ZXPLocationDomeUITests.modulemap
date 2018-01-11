@@ -1,0 +1,6 @@
+framework module Pods_ZXPLocationDomeUITests {
+  umbrella header "Pods-ZXPLocationDomeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
